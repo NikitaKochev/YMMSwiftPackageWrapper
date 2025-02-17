@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "YMMSwiftPackageWrapper",
     platforms: [
-        .iOS(.v15),
+        .iOS(.v13),
     ],
     products: [
         // Products define the executables and libraries a package produces, and
@@ -20,8 +20,8 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/NikitaKochev/YMMSwiftPackage",
-            .exact("4.9.0-full")
-        ),
+            branch: "main"
+        )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a
